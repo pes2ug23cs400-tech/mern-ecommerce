@@ -7,7 +7,7 @@ import { set } from "mongoose";
 
 
 function AppState(props) {
-  const url = "http://localhost:5000/api";
+  const url = "https://mern-ecommerce-api.onrender.com/api";
 
   const [products, setProducts] = useState([]);
   const [token, setToken] = useState([]);
