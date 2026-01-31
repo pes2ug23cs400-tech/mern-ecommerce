@@ -6,7 +6,9 @@ import RelatedProduct from './RelatedProduct.jsx';
 function ProductDetail() {
   const [product, setProduct] = useState();
 const {id}=useParams()
-  const url = 'https://mern-ecommerce-api.onrender.com/api';
+  // const url = 'https://mern-ecommerce-api.onrender.com/api';
+  const url = 'https://mern-ecommerce-3nm8.onrender.com/api';
+
   
   
   useEffect(() => {
