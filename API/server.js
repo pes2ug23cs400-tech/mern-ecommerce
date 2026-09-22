@@ -13,13 +13,14 @@ dotenv.config();
 
 const app = express();
 
-app.use(core({
-  origin: "https://mern-ecommerce-one-puce.vercel.app",
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
+// app.use(core({
+//   origin: "https://mern-ecommerce-one-puce.vercel.app",
+//   credentials: true,
+//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//   allowedHeaders: ["Content-Type", "Authorization"]
+// }));
 
+app.use(core());
 app.use(bodyParser.json());
 
 
