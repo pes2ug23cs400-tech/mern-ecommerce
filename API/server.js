@@ -13,12 +13,14 @@ dotenv.config();
 
 const app = express();
 
-app.use(core(
- {   origin:true,
-    methods: ["GET,POST,PUT,DELETE"],
-    credentials: true
-  }
-));
+app.use(core({
+  origin: "https://mern-ecommerce-one-puce.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization", "Auth"]
+}));
+
+app.options("*", core());
 app.use(bodyParser.json());
 
 //home testing route
