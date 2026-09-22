@@ -8,9 +8,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 function AppState(props) {
   // const url = "https://mern-ecommerce-api.onrender.com/api";
-//  const API_URL = "https://mern-ecommerce-backend-xxjy.onrender.com";
+const API_URL = "https://mern-ecommerce-backend-xxjy.onrender.com";
   //changed to this
-  const API_URL = "https://mern-ecommerce-backend-xzyj.onrender.com";
+  //const API_URL = "https://mern-ecommerce-backend-xzyj.onrender.com";
 
 
 
