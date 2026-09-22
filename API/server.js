@@ -13,6 +13,7 @@ dotenv.config();
 
 const app = express();
 
+//this is updated line
 app.use(core({
   origin: "https://mern-ecommerce-one-puce.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
