@@ -16,11 +16,8 @@ const app = express();
 app.use(core({
   origin: "https://mern-ecommerce-one-puce.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true,
-  allowedHeaders: ["Content-Type", "Authorization", "Auth"]
+  credentials: true
 }));
-
-app.options("*", core());
 app.use(bodyParser.json());
 
 //home testing route
