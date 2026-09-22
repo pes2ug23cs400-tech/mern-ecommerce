@@ -22,6 +22,7 @@ app.use(core({
 
 app.use(bodyParser.json());
 
+
 //home testing route
 app.get("/",(req,res)=>
     res.json({message:"This is home page"})
